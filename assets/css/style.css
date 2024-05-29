@@ -18,7 +18,18 @@ body {
 }
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    /* element has high z-index value to ensure it is always on top */
+    z-index: 99;
+    width: 100%;
+    /*box-shadow
+    first value horizontal offset +ve value offset to right and -ve value offset to left of element 
+    second value vertical offset 
+    blur - how soft or hard the shadow will look 
+    Color value */
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 
 h1 {
