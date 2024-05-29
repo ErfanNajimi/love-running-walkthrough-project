@@ -94,6 +94,7 @@ main {
     flex-grow: 1 ~ grow to take up surplus space
     flex-shrink: 0 ~ does not shrink beyond that which is available */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
