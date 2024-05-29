@@ -30,6 +30,9 @@ header {
     blur - how soft or hard the shadow will look 
     Color value */
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -56,6 +59,32 @@ h1 {
 
 .active {
     border-bottom: 1px solid #3a3a3a
+}
+
+/* Nabar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: inherit;
+    box-shadow: inherit;
+    display: none; /* hidden */
+    top: 99% /*show at bottom of parent element when 100% */
+}
+
+/* Nav toggle */
+/* using pseudo class for when it has been checked and and we use the tilde '~' to display the sibling nav element */
+#nav-toggle:checked~nav {
+    display: block
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 /* Main content */
 main {
