@@ -121,25 +121,27 @@ main {
 /* Benefits section */
 
 #reasons {
-    width: 90vw;
+    width: 90%;
     margin: 20px auto;
+}
+
+#reasons h2 {
+    font-size: 280%;
+    margin: 20px;
     text-align: center;
 }
 
-#reasons > h2 {
-    font-size: 280%;
-    margin: 20px;
-}
-
-#benefits div {
+#benefits-physical > div, benefits-mental > div {
     margin-bottom: 20px;
     line-height: 20px;
-    text-align: left;
 }
 
-#benefits div > p {
-    border-top: 1px solid #3a3a3a;
+#benefits p {
     padding: 0 20px;
+}
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px;
 }
 
 /* Footer */
