@@ -245,13 +245,15 @@ hr {
     /* Reasons section */
     #benefits {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
     }
 
-    /* overide align-self from previous media query */
-    #benefits-physical > div,
+    #benefits-physical > div {
+        align-self: flex-start;
+    }
+
     #benefits-mental > div {
-        align-self: center;
+        align-self: flex-end;
     }
 
     #benefits-physical {
