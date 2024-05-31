@@ -190,6 +190,19 @@ hr {
     color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 10em; /* Question? */
+}
+
+#photos {
+    /* Removes the whitespace between images. 
+    Images inline elements by default and treated like text which
+    has auto line height to vertically space out lines cuasing white space. */
+    line-height: 0; 
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -205,18 +218,15 @@ hr {
     color: #3a3a3a;
 }
 
-/* Gallery page */
-#photos img {
-    width: 100%;
-    line-height: 1em;
+/*Media query: large or landscape photos (576 px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2; /* property tells browser to display content in columns */
+        column-gap: 0;
+    }
 }
 
-#photos {
-    /* Removes the whitespace between images. 
-    Images inline elements by default and treated like text which
-    has auto line height to vertically space out lines cuasing white space. */
-    line-height: 0; 
-}
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -276,6 +286,11 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Media query: small laptops and larger (992px and up) */
@@ -305,5 +320,10 @@ hr {
 
     #benefits-image {
         order: -1;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
