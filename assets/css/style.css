@@ -205,6 +205,19 @@ hr {
     color: #3a3a3a;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    /* Removes the whitespace between images. 
+    Images inline elements by default and treated like text which
+    has auto line height to vertically space out lines cuasing white space. */
+    line-height: 0; 
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
